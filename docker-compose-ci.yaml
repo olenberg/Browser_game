@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  flask_app:
+    image: olenberg/cw5:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    ports:
+      - 5000:5000
